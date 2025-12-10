@@ -1,0 +1,40 @@
+body {
+    background-image: url('background.png');
+    background-color: #1ca641; /* EZ lesz a szín */
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+
+.main_finger {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main_finger img {
+    width: 512px;
+    height: 648px;
+    top: 324px;
+    left: 974px;
+    position: absolute;
+}
+
+.sorok {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.sorok img {
+    width: 468px;
+    height: 72px;
+    top: 353px;
+    left: 383px;
+    position: relative;
+    margin-bottom: 0px;
+}
