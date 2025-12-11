@@ -1,17 +1,18 @@
 body {
     background-image: url('background.png');
-    background-color: #1ca641; /* EZ lesz a szín */
+    background-color: #1ca641;
     background-blend-mode: multiply;
     width: 100%;
     height: 100%;
 }
 
+
 .main_finger {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
+    position: absolute;
 }
 
 .main_finger img {
@@ -20,6 +21,7 @@ body {
     top: 324px;
     left: 974px;
     position: absolute;
+    filter: brightness(0) saturate(100%) invert(42%) sepia(85%) saturate(1662%) hue-rotate(107deg) brightness(95%) contrast(78%);
 }
 
 .sorok {
@@ -30,20 +32,78 @@ body {
     position: absolute;
 }
 
-.sorok img {
+/*.sorok img {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(85%) saturate(1662%) hue-rotate(107deg) brightness(95%) contrast(78%);
+}*/
+
+#sor1_image, #sor2_image, #sor3_image, #sor4_image,
+#sor5_image, #sor6_image, #sor7_image, #sor8_image{
     width: 468px;
     height: 72px;
-    top: 353px;
-    left: 383px;
-    position: relative;
-    margin-bottom: 0px;
+    filter: brightness(0) saturate(100%) invert(42%) sepia(85%) saturate(1662%) hue-rotate(107deg) brightness(95%) contrast(78%);
 }
 
-.active {
-    background-color: rgba(28, 166, 65, 10);
-    width: 468px;
-    height: 72px;
+#sor1_image {
     top: 353px;
     left: 383px;
-    position: relative;
+    position: absolute;
+}
+
+#sor2_image {
+    top: 429px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor3_image {
+    top: 505px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor4_image {
+    top: 581px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor5_image {
+    top: 657px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor6_image {
+    top: 733px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor7_image {
+    top: 809px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor8_image {
+    top: 885px;
+    left: 383px;
+    position: absolute;
+}
+
+#sor1_image.active,
+#sor2_image.active,
+#sor3_image.active,
+#sor4_image.active,
+#sor5_image.active,
+#sor6_image.active,
+#sor7_image.active,
+#sor8_image.active {
+    filter: brightness(0%) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(64deg) brightness(95%) contrast(113%);
+}
+
+#selector_frame_image {
+    top: 353px;
+    left: 383px;
+    position: absolute;
 }
